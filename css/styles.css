@@ -1,0 +1,1724 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------
+
+Barre de navigation responsive
+
+-------------------------------------------------------*/
+
+#mainNav {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: transparent;
+}
+#mainNav .navbar-toggler {
+  padding: 0.75rem;
+  font-size: 0.75rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#mainNav .navbar-brand {
+  color:#A86737;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+}
+#mainNav .navbar-brand img {
+  height: 40px;
+  margin-right:-15px;
+}
+#mainNav.navbar-shrink {
+    /*Navbar descendant*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #FFECA8;
+
+}
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.95rem; /*Rappel: rem= 16px donc 0,95x16px= 15,2px*/
+  color: #575656;
+  letter-spacing: 0.0625em;
+}
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #A86737;
+}
+
+@media only screen and (max-width: 1200px)
+{
+  #mainNav .navbar-nav .nav-item .nav-link 
+ {
+  font-size: 14px; 
+  letter-spacing: 0.0625em;
+ }
+  #mainNav .navbar-brand 
+ {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+ }
+}
+
+@media only screen and (max-width: 390px)
+{
+ #mainNav {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+ #mainNav .navbar-brand {
+    font-size: 18px;
+  }
+  #mainNav.navbar-shrink {
+    /*Navbar descendant*/
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #FFECA8;
+
+  }
+}
+@media only screen and (max-width: 310px)
+{
+  #mainNav .navbar-brand {
+    font-size: 15px;
+  }
+  #mainNav .navbar-toggler {
+  padding: 9px;
+  font-size: 9px;
+  font-weight: 700;
+}
+#mainNav .navbar-brand img {
+  height: 29px;
+  margin-right:-15px;
+}
+}
+
+/*-----------------------
+Overlay
+------------------------*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #A86737;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #FFECA8;
+}
+
+.overlay .logo{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    width: 23%;
+    height: auto;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color:white;
+}
+
+@media screen and (max-width: 600px) {
+  .overlay a 
+  {
+    font-size: 24px
+  }
+  .overlay .closebtn
+  {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .overlay a 
+  {
+    font-size: 20px
+  }
+  .overlay .closebtn
+  {
+  font-size: 35px;
+  top: 15px;
+  right: 35px;
+  }
+  .overlay .logo {
+    position: absolute;
+    top: 36px;
+    left: 25px;
+    width: 23%;
+    height: auto;
+}
+}
+/*----------------------------------------------------------
+
+Section header
+
+-----------------------------------------------------------*/
+header.masthead {
+  padding-top: 285px;
+  padding-bottom: 200px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 85%, rgba(0, 0, 0, 0) 75%, #FFECA8 100%), url("../assets/img/fond.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+header.masthead .masthead-subheading {
+  font-size: 80px;
+  font-style: italic;
+  line-height: 90px;
+  margin-bottom: 30px;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header.masthead .masthead-heading {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 30px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.masthead h1, .masthead .h1 {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 60px;
+  line-height: 100px;
+  letter-spacing: 8.8px;
+  background: #A86737;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+
+
+
+@media only screen and (max-width: 1199px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 53px;
+  line-height: 90px;
+  letter-spacing: 6px;
+ }
+}
+@media only screen and (max-width: 1030px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 38px;
+  line-height: 70px;
+  letter-spacing: 5px;
+ }
+}
+@media only screen and (max-width: 775px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 27px;
+  line-height: 55px;
+  letter-spacing: 5px;
+ }
+ header.masthead 
+ {
+  padding-top: 230px;
+  padding-bottom: 230px;
+ }
+}
+/* Si l'écran de navigateur est à 600px de largeur ou moins alors...  */
+@media only screen and (max-width: 600px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 24px;
+  line-height: 39px;
+  letter-spacing: 3px;
+ }
+ header.masthead 
+ {
+  padding-top: 230px;
+  padding-bottom: 230px;
+ }
+}
+@media only screen and (max-width: 499px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 20px;
+  line-height: 39px;
+  letter-spacing: 3px;
+ }
+ header.masthead 
+ {
+  padding-top: 210px;
+  padding-bottom: 210px;
+ }
+}
+/*Si l'écran de navigateur est à 370px de largeur ou moins alors...*/
+@media only screen and (max-width: 390px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 2.2px;
+ }
+ header.masthead 
+ {
+  padding-top: 190px;
+  padding-bottom: 190px;
+ }
+}
+@media only screen and (max-width: 349px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 16px;
+  line-height: 25px;
+  letter-spacing: 1px;
+ }
+ header.masthead 
+ {
+  padding-top: 180px;
+  padding-bottom: 180px;
+ }
+}
+@media only screen and (max-width: 284px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 1px;
+ }
+ header.masthead 
+ {
+  padding-top: 160px;
+  padding-bottom: 160px;
+ }
+}
+@media only screen and (max-width: 259px)
+{
+ .masthead h1, .masthead .h1 
+ {
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 1px;
+ }
+ header.masthead 
+ {
+  padding-top: 160px;
+  padding-bottom: 160px;
+ }
+}
+/*-------------------------------------------------------
+
+Présentation et titre autres sections
+
+-------------------------------------------------------*/
+
+.fa-inverse {
+    color: white;
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 45px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 35px;
+}
+.page-section h4.section-heading, .page-section .section-heading.h4 {
+  font-size: 45px;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 5px;
+  color: #A86737 ;
+}
+.page-section h5.section-subheading, .page-section .section-subheading.h5 {
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 35px;
+}
+.page-section h6.section-subheading, .page-section .section-subheading.h6
+ {
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+  section {
+    padding: 9rem 0;
+  }
+}
+.btn-xl {
+  padding: 12px 15px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.btn-social {
+  height: 2.5rem;
+  width: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 100%;
+}
+
+@media only screen and (max-width: 600px)
+{
+  .page-section {
+  padding: 6rem 1rem;
+}
+/*Projet et Contact titre*/
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 24px;
+}
+/*Sous titre Projet et Contact*/
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 22px;
+  font-weight: 400;
+ 
+}
+/*Titre de Présentation*/
+.page-section h4.section-heading, .page-section .section-heading.h4 {
+  font-size: 24px;
+  margin-top: 0;
+ 
+}
+/*Sous-titre de Présentation*/
+.page-section h5.section-subheading, .page-section .section-subheading.h5 {
+  font-size: 22px;
+  font-weight: 400;
+
+}
+/*Texte sous Présentation*/
+.page-section h6.section-subheading, .page-section .section-subheading.h6
+ {
+  font-size: 16px;
+  font-weight: 400;
+ }
+}
+@media only screen and (max-width: 499px)
+{/*Projet et Contact titre*/
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 20px;
+}
+/*Sous titre Projet et Contact*/
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 18px;
+  font-weight: 400;
+ 
+}
+/*Titre de Présentation*/
+.page-section h4.section-heading, .page-section .section-heading.h4 {
+  font-size: 20px;
+  margin-top: 0;
+ 
+}
+/*Sous-titre de Présentation*/
+.page-section h5.section-subheading, .page-section .section-subheading.h5 {
+  font-size: 18px;
+  font-weight: 400;
+
+}
+/*Texte sous Présentation*/
+.page-section h6.section-subheading, .page-section .section-subheading.h6
+ {
+  font-size: 15px;
+  font-weight: 400;
+ }
+}
+}
+@media only screen and (max-width: 390px)
+{
+ .page-section h4.section-heading, .page-section .section-heading.h4 {
+  font-size: 18px;
+  margin-top: 0;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 18px;
+}
+/*Sous-titre de Présentation/Compétence/XPFormation*/
+.page-section h5.section-subheading, .page-section .section-subheading.h5 {
+  font-size: 16px;
+  font-weight: 400;
+
+}
+/*Texte sous Présentation*/
+.page-section h6.section-subheading, .page-section .section-subheading.h6
+ {
+  font-size: 14px;
+  font-weight: 400;
+ }
+ /*Sous titre Projet*/
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 16px;
+  font-weight: 400;
+ 
+}
+}
+@media only screen and (max-width: 349px)
+{
+ .page-section h4.section-heading, .page-section .section-heading.h4 {
+  font-size: 16px;
+  margin-top: 0;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 16px;
+}
+/*Sous-titre de Présentation/Compétence/XPFormation*/
+.page-section h5.section-subheading, .page-section .section-subheading.h5 {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+/*Texte sous Présentation*/
+.page-section h6.section-subheading, .page-section .section-subheading.h6
+ {
+  font-size: 12px;
+  font-weight: 400;
+ }
+ /*Sous titre Projet*/
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 14px;
+  font-weight: 400;
+ 
+}
+}
+@media only screen and (max-width: 284px)
+{
+ .page-section h4.section-heading, .page-section .section-heading.h4 {
+  font-size: 14px;
+  margin-top: 0;
+}
+.page-section h2.section-heading, .page-section .section-heading.h2 {
+  font-size: 14px;
+}
+/*Sous-titre de Présentation/Compétence/XPFormation*/
+.page-section h5.section-subheading, .page-section .section-subheading.h5 {
+  font-size: 12px;
+  font-weight: 400;
+
+}
+/*Texte sous Présentation*/
+.page-section h6.section-subheading, .page-section .section-subheading.h6
+ {
+  font-size: 10px;
+  font-weight: 400;
+ }
+ /*Sous titre Projet*/
+.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+  font-size: 12px;
+  font-weight: 400;
+ 
+}
+}
+/*----------------------------------------------------------
+
+Compétences
+
+----------------------------------------------------------*/
+.page-comp {
+  padding: 4rem;
+  background-color: white;
+}
+.page-comp h4.section-comp, .page-comp .section-comp.h4 {
+  font-size: 45px;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 5px;
+  color: #A86737;
+}
+.page-comp h5.section-comp, .page-comp .section-comp.h5 {
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 45px;
+}
+.page-comp h6.section-comp, .page-comp .section-comp.h6 {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 35px;
+  margin-top:10px;
+  margin-left: 12%;
+  margin-right: 10%;
+}
+#competences.container{
+    position: relative;
+    max-width: 1000px;
+    width: 90%;
+    max-height: 1000px;
+    height: 100%;
+    background: #FFECA8;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+#competences.container .skill-box{
+    width: 100%;
+    margin: 15px 0;
+}
+.skill-box .title{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #A86737;
+}
+.skill-box .skill-bar{
+    height: 8px;
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: rgba(0,0,0,0.1);
+}
+.skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: white;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-per.cms{
+    width: 85%;
+    animation-delay: 0.1s;
+}
+.skill-per.javascript{
+    width: 50%;
+    animation-delay: 0.2s;
+}
+.skill-per.php{
+    width: 60%;
+    animation-delay: 0.3s;
+}
+.skill-per.sql{
+    width: 75%;
+    animation-delay: 0.3s;
+}
+.skill-per.pyt{
+    width: 45%;
+    animation-delay: 0.3s;
+}
+.skill-per.kot{
+    width: 50%;
+    animation-delay: 0.3s;
+}
+.skill-per.cc{
+    width: 80%;
+    animation-delay: 0.3s;
+}
+.skill-per.deb{
+    width: 70%;
+    animation-delay: 0.3s;
+}
+@keyframes progress {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.skill-per .tooltip{
+    position: absolute;
+    right: -3px;
+    top: -6px;
+    font-size: 11px;
+    font-weight: 1000;
+    color: #A86737;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: transparent;
+    z-index: 1;
+}
+.tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color:transparent;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+@media only screen and (max-width: 600px)
+{
+.page-comp {
+  padding: 2rem 1rem;
+  background-color: white;
+}
+.page-comp h4.section-comp, .page-comp .section-comp.h4 {
+  font-size: 24px;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 5px;
+  color: #A86737;
+}
+.page-comp h5.section-comp, .page-comp .section-comp.h5 {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 45px;
+}
+#competences.container{
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    max-height: 1000px;
+    height: 100%;
+    background: #FFECA8;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.page-comp h6.section-comp, .page-comp .section-comp.h6 {
+  font-size: 16px;
+}
+}
+@media only screen and (max-width: 499px)
+{
+  .page-comp h4.section-comp, .page-comp .section-comp.h4 {
+  font-size: 20px;
+  
+}
+.page-comp h5.section-comp, .page-comp .section-comp.h5 {
+  font-size: 18px;
+}
+.page-comp h6.section-comp, .page-comp .section-comp.h6 {
+  font-size: 15px;
+}
+}
+@media only screen and (max-width: 390px)
+{
+  .page-comp h4.section-comp, .page-comp .section-comp.h4 {
+  font-size: 18px;
+  
+}
+.page-comp h5.section-comp, .page-comp .section-comp.h5 {
+  font-size: 16px;
+}
+.page-comp h6.section-comp, .page-comp .section-comp.h6 {
+  font-size: 14px;
+}
+}
+@media only screen and (max-width: 349px)
+{
+  .page-comp h4.section-comp, .page-comp .section-comp.h4 {
+  font-size: 16px;
+  
+}
+.page-comp h5.section-comp, .page-comp .section-comp.h5 {
+  font-size: 14px;
+}
+.page-comp h6.section-comp, .page-comp .section-comp.h6 {
+  font-size: 12px;
+}
+}
+@media only screen and (max-width: 284px)
+{
+  .page-comp h4.section-comp, .page-comp .section-comp.h4 {
+  font-size: 14px;
+  
+}
+.page-comp h5.section-comp, .page-comp .section-comp.h5 {
+  font-size: 12px;
+}
+.page-comp h6.section-comp, .page-comp .section-comp.h6 {
+  font-size: 10px;
+}
+}
+
+/*--------------------------------------------------------
+
+Slide Expérience/Formation
+
+--------------------------------------------------------*/
+.page-exp {
+  padding: 1rem 4rem;
+  background-color: white;
+}
+.page-exp h4.section-exp, .page-exp .section-exp.h4 {
+  font-size: 45px;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 5px;
+  color: #A86737;
+}
+.page-exp h5.section-comp, .page-exp .section-exp.h5 {
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 45px;
+}
+
+.slidetime {
+   font-family: "Source Sans Pro", Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 16px;
+   line-height: 1.75;
+}
+ #SlideTimeline {
+   display: flex;
+   background-color: #031625;
+}
+ #SlideTimeline:hover .tl-item {
+   width: 23.3333%;
+}
+ .tl-item {
+   transform: translate3d(0, 0, 0);
+   position: relative;
+   width: 25%;
+   height: 100vh;
+   min-height: 600px;
+   color: #fff;
+   overflow: hidden;
+   transition: width 0.5s ease;
+}
+ .tl-item:before, .tl-item:after {
+   transform: translate3d(0, 0, 0);
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+ .tl-item:after {
+   background: rgba(223, 207, 147, 0.85);
+   opacity: 1;
+   transition: opacity 0.5s ease;
+}
+ .tl-item:before {
+   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(87, 86, 86, 1) 75%);
+   z-index: 1;
+   opacity: 0;
+   transform: translate3d(0, 0, 0) translateY(50%);
+   transition: opacity 0.5s ease, transform 0.5s ease;
+}
+/*Après click, largeur du slide*/
+ .tl-item:hover {
+   width: 30% !important;
+}
+ .tl-item:hover:after {
+   opacity: 0;
+}
+ .tl-item:hover:before {
+   opacity: 1;
+   transform: translate3d(0, 0, 0) translateY(0);
+   transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+ .tl-item:hover .tl-content {
+   opacity: 1;
+   transform: translateY(0);
+   transition: all 0.75s ease 0.5s;
+}
+ .tl-item:hover .tl-bg {
+   filter: grayscale(0);
+}
+ .tl-content {
+   transform: translate3d(0, 0, 0) translateY(25px);
+   position: relative;
+   z-index: 1;
+   text-align: center;
+   margin: 0 1.618em;
+   top: 42%;
+   opacity: 0;
+   color: white;
+}
+ .tl-content h1 {
+   font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+   text-transform: uppercase;
+   color: white;
+   font-size: 20px;
+   font-weight: normal;
+}
+ .tl-year {
+   position: absolute;
+   top: 30%;
+   left: 50%;
+   transform: translateX(-50%) translateY(-50%);
+   z-index: 1;
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #fff;
+}
+ .tl-year p {
+   font-family: "Pathway Gothic One", Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 1.728rem;
+   line-height: 0px;
+}
+.slidetime p {
+     display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+ .tl-bg {
+   transform: translate3d(0, 0, 0);
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-size: cover;
+   background-position: center center;
+   transition: filter 0.5s ease;
+   filter: grayscale(100%);
+}
+@media (max-width: 992px)
+{
+  .tl-content h1 {
+   font-size: 15px;
+   font-weight: normal;
+}
+.tl-content {
+   text-align: center;
+   margin: 0 1em;
+}
+.slidetime {
+   font-size: 14px;
+}
+/*Après click, largeur du slide*/
+ .tl-item:hover {
+   width: 45% !important;
+}
+}
+@media only screen and (max-width: 600px)
+{
+  .page-exp {
+  padding: 1rem 1rem;
+  background-color: white;
+}
+.page-exp h4.section-exp, .page-exp .section-exp.h4 {
+  font-size: 24px;
+  margin-top: 0;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 5px;
+  color: #A86737;
+}
+.page-exp h5.section-exp, .page-exp .section-exp.h5 {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  text-align: left;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: 45px;
+}
+/*Après click, largeur du slide*/
+ .tl-item:hover {
+   width: 60% !important;
+}
+ .tl-year p {
+   font-size: 22px;
+}
+}
+@media only screen and (max-width: 499px)
+{
+.page-exp h4.section-exp, .page-exp .section-exp.h4 {
+  font-size: 20px;
+}
+.page-exp h5.section-exp, .page-exp .section-exp.h5 {
+  font-size: 18px;
+}
+}
+@media only screen and (max-width: 470px){
+  .tl-year p {
+   font-size: 16px;
+}
+/*Après click, largeur du slide*/
+ .tl-item:hover {
+   width: 70% !important;
+}
+.tl-content h1 {
+   font-size: 13px;
+   font-weight: normal;
+}
+.slidetime {
+   font-size: 12px;
+}
+}
+@media only screen and (max-width: 390px){
+  .tl-year p {
+   font-size: 11.5px;
+}
+.page-exp h4.section-exp, .page-exp .section-exp.h4 {
+  font-size: 18px;
+  
+}
+.page-exp h5.section-exp, .page-exp .section-exp.h5 {
+  font-size: 16px;
+}
+/*Après click, largeur du slide*/
+ .tl-item:hover {
+   width: 80% !important;
+}
+.tl-content h1 {
+   font-size: 10px;
+   font-weight: normal;
+}
+.slidetime {
+   font-size: 10px;
+}
+}
+@media only screen and (max-width: 349px){
+
+.page-exp h4.section-exp, .page-exp .section-exp.h4 {
+  font-size: 16px;
+  
+}
+.page-exp h5.section-exp, .page-exp .section-exp.h5 {
+  font-size: 14px;
+}
+}
+@media only screen and (max-width: 284px){
+
+.page-exp h4.section-exp, .page-exp .section-exp.h4 {
+  font-size: 14px;
+  
+}
+.page-exp h5.section-exp, .page-exp .section-exp.h5 {
+  font-size: 12px;
+}
+}
+
+
+/*----------------------------------------------------------
+
+Portfolio
+
+----------------------------------------------------------*/
+
+#portfolio .portfolio-item {
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+#portfolio .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 200, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+#portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+#portfolio .portfolio-item .portfolio-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #fff;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  margin-bottom: 0;
+}
+#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
+  font-style: italic;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.portfolio-modal .modal-dialog {
+  margin: 1rem;
+  max-width: 100vw;
+}
+.portfolio-modal .modal-content {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  text-align: center;
+}
+.portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+.portfolio-modal .modal-content p.item-intro {
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.portfolio-modal .modal-content p {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .modal-content ul.list-inline {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .modal-content img {
+  margin-bottom: 2rem;
+}
+.portfolio-modal .close-modal {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+}
+.portfolio-modal .close-modal:hover {
+  opacity: 0.3;
+}
+@media only screen and (max-width: 555px){
+  .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+  font-size: 43px;
+  line-height: 3rem;
+}
+}
+@media only screen and (max-width: 425px){
+  .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+  font-size: 31px;
+  line-height: 3rem;
+}
+}
+@media only screen and (max-width: 336px){
+  .portfolio-modal .modal-content h2, .portfolio-modal .modal-content .h2 {
+  font-size: 24px;
+  line-height: 3rem;
+}
+.portfolio-modal .modal-content {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+}
+/*-------------------------------------------------------
+
+Diaporama Portfolio
+
+--------------------------------------------------------*/
+
+
+.Diapo1
+{
+  width: 454px;
+  height: 510px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: diapo1 15s ease-in-out infinite both;
+
+}
+
+.conteneur1
+{
+  max-width: 576px;
+  margin: 50px auto;
+}
+
+@keyframes diapo1
+{
+  0%
+  {
+    background-image: url("../assets/img/SlidePortfolio/egypte/1.jpg");
+  }
+  20%
+  {
+    background-image: url("../assets/img/SlidePortfolio/egypte/2.jpg");
+  }
+  40%
+  {
+    background-image: url("../assets/img/SlidePortfolio/egypte/3.jpg");
+  }
+  60%
+  {
+    background-image: url("../assets/img/SlidePortfolio/egypte/4.jpg");
+  }
+  80%
+  {
+    background-image: url("../assets/img/SlidePortfolio/egypte/5.jpg");
+  }
+  100%
+  {
+    background-image: url("../assets/img/SlidePortfolio/egypte/6.jpg");
+  }
+}
+.Diapo1:hover
+{
+  animation-play-state: paused;
+}
+
+@media only screen and (max-width: 550px){
+.Diapo1 {
+    width: 335px;
+    height: 377px;
+}
+}
+@media only screen and (max-width: 425px){
+.Diapo1 {
+    width: 250px;
+    height: 281px;
+}
+}
+@media only screen and (max-width: 336px){
+.Diapo1 {
+    width: 180px;
+    height: 202px;
+}
+}
+
+/*-------------------------------------------------------
+
+Diaporama 2 Portfolio
+
+--------------------------------------------------------*/
+
+
+.Diapo2
+{
+  width: 454px;
+  height: 348px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: diapo2 15s ease-in-out infinite both;
+
+}
+
+.conteneur2
+{
+  max-width: 576px;
+  margin: 50px auto;
+}
+
+@keyframes diapo2
+{
+  0%
+  {
+    background-image: url("../assets/img/SlidePortfolio/cv/1.jpg");
+  }
+  20%
+  {
+    background-image: url("../assets/img/SlidePortfolio/cv/2.jpg");
+  }
+  40%
+  {
+    background-image: url("../assets/img/SlidePortfolio/cv/3.jpg");
+  }
+  60%
+  {
+    background-image: url("../assets/img/SlidePortfolio/cv/4.jpg");
+  }
+  80%
+  {
+    background-image: url("../assets/img/SlidePortfolio/cv/5.jpg");
+  }
+  100%
+  {
+    background-image: url("../assets/img/SlidePortfolio/cv/6.jpg");
+  }
+}
+.Diapo2:hover 
+{
+  animation-play-state: paused;
+}
+
+@media only screen and (max-width: 550px){
+.Diapo2 {
+    width: 335px;
+    height: 257px;
+}
+}
+@media only screen and (max-width: 425px){
+.Diapo2 {
+    width: 250px;
+    height: 192px;
+}
+}
+@media only screen and (max-width: 336px){
+.Diapo2 {
+    width: 180px;
+    height: 138px;
+}
+}
+/*-------------------------------------------------------
+
+Diaporama 3 Portfolio
+
+--------------------------------------------------------*/
+
+
+.Diapo3
+{
+  width: 540px;
+  height: 428px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: diapo3 15s ease-in-out infinite both;
+
+}
+
+.conteneur3
+{
+  max-width: 576px;
+  margin: 50px auto;
+}
+
+@keyframes diapo3
+{
+  0%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatif/1.jpg");
+  }
+  14.29%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatif/2.jpg");
+  }
+  28.58%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatif/3.jpg");
+  }
+  42.87%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatif/4.jpg");
+  }
+  57.16%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatif/5.jpg");
+  }
+  71.45%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatif/6.jpg");
+  }
+  85.74%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatif/7.jpg");
+  }
+  100%
+  {
+     background-image: url("../assets/img/SlidePortfolio/applicatif/8.jpg");
+  }
+}
+.Diapo3:hover 
+{
+  animation-play-state: paused;
+}
+@media only screen and (max-width: 770px){
+.Diapo3 {
+    width: 455px;
+    height: 359px;
+}
+}
+@media only screen and (max-width: 550px){
+.Diapo3 {
+    width: 335px;
+    height: 265px;
+}
+}
+@media only screen and (max-width: 425px){
+.Diapo3 {
+    width: 250px;
+    height: 197px;
+}
+}
+@media only screen and (max-width: 336px){
+.Diapo3 {
+    width: 180px;
+    height: 142px;
+}
+}
+/*-------------------------------------------------------
+
+Diaporama 4 Portfolio
+
+--------------------------------------------------------*/
+
+
+.Diapo4
+{
+  width: 485px;
+  height: 448px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: diapo4 60s ease-in-out infinite both;
+
+}
+
+.conteneur4
+{
+  max-width: 576px;
+  margin: 50px auto;
+}
+
+@keyframes diapo4
+{
+  0%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/1.jpg");
+  }
+  4.35%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/2.jpg");
+  }
+  9.1%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/3.jpg");
+  }
+  13.65%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/4.jpg");
+  }
+  18.2%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/1admin.jpg");
+  }
+  22.75%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/2admin.jpg");
+  }
+  27.3%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/2bisAdmin.jpg");
+  }
+  31.85%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/3admin.jpg");
+  }
+  36.4%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/3bisAdmin.jpg");
+  }
+  40.95%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/4admin.jpg");
+  }
+  45.5%
+  {
+     background-image: url("../assets/img/SlidePortfolio/applicatifPHP/5.jpg");
+  }
+  50.05%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/1ader.jpg");
+  }
+  54.6%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/2ader.jpg");
+  }
+  59.15%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/3ader.jpg");
+  }
+  63.7%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/4ader.jpg");
+  }
+  68.25%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/5ader.jpg");
+  }
+  72.8%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/6ader.jpg");
+  }
+  77.35%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/Basededonnée.jpg");
+  }
+  81.9%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/Basededonnée2.jpg");
+  }
+  86.45%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/CodeMVC.jpg");
+  }
+  91%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/Déclencheur(Trigger).jpg");
+  }
+  95.55%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/Procédure2.jpg");
+  }
+  100%
+  {
+    background-image: url("../assets/img/SlidePortfolio/applicatifPHP/Procédure.jpg");
+  }
+
+}
+.Diapo4:hover 
+{
+  animation-play-state: paused;
+}
+
+@media only screen and (max-width: 575px){
+.Diapo4 {
+    width: 335px;
+    height: 309px;
+}
+}
+@media only screen and (max-width: 425px){
+.Diapo4 {
+    width: 250px;
+    height: 231px;
+}
+}
+@media only screen and (max-width: 336px){
+.Diapo4 {
+    width: 180px;
+    height: 166px;
+}
+}
+/*-------------------------------------------------------
+
+Diaporama 5 Portfolio
+
+--------------------------------------------------------*/
+
+
+.Diapo5
+{
+  width: 440px;
+  height: 270px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: diapo5 15s ease-in-out infinite both;
+
+}
+
+.conteneur5
+{
+  max-width: 576px;
+  margin: 50px auto;
+}
+
+@keyframes diapo5
+{
+  0%
+  {
+    background-image: url("../assets/img/SlidePortfolio/jeu/1.jpg");
+  }
+  16.67%
+  {
+    background-image: url("../assets/img/SlidePortfolio/jeu/2.jpg");
+  }
+  33.34%
+  {
+    background-image: url("../assets/img/SlidePortfolio/jeu/4.jpg");
+  }
+  50.01%
+  {
+    background-image: url("../assets/img/SlidePortfolio/jeu/3.jpg");
+  }
+  66.67%
+  {
+    background-image: url("../assets/img/SlidePortfolio/jeu/5.jpg");
+  }
+  83.35%
+  {
+    background-image: url("../assets/img/SlidePortfolio/jeu/6.jpg");
+  }
+  100%
+  {
+     background-image: url("../assets/img/SlidePortfolio/jeu/7.jpg");
+  }
+}
+.Diapo5:hover 
+{
+  animation-play-state: paused;
+}
+
+@media only screen and (max-width: 550px){
+.Diapo5 {
+    width: 335px;
+    height: 206px;
+}
+}
+@media only screen and (max-width: 425px){
+.Diapo5 {
+    width: 250px;
+    height: 153px;
+}
+}
+@media only screen and (max-width: 336px){
+.Diapo5 {
+    width: 180px;
+    height: 110px;
+}
+}
+/*-------------------------------------------------------
+
+Diaporama 6 Portfolio
+
+--------------------------------------------------------*/
+
+
+.Diapo6
+{
+  width: 344px;
+  height: 540px;
+  margin: 50px auto;
+  box-shadow: 0px 0px 10px #777;
+  background-color: #EDEDED;
+  background-size: contain;
+  animation: diapo6 15s ease-in-out infinite both;
+
+}
+
+.conteneur6
+{
+  max-width: 576px;
+  margin: 50px auto;
+}
+
+@keyframes diapo6
+{
+  0%
+  {
+    background-image: url("../assets/img/SlidePortfolio/wordpress/1.jpg");
+  }
+  25%
+  {
+    background-image: url("../assets/img/SlidePortfolio/wordpress/2.jpg");
+  }
+  50%
+  {
+    background-image: url("../assets/img/SlidePortfolio/wordpress/3.jpg");
+  }
+  75%
+  {
+    background-image: url("../assets/img/SlidePortfolio/wordpress/4.jpg");
+  }
+  100%
+  {
+    background-image: url("../assets/img/SlidePortfolio/wordpress/5.jpg");
+  }
+}
+.Diapo6:hover 
+{
+  animation-play-state: paused;
+}
+@media only screen and (max-width: 435px){
+.Diapo6 {
+    width: 250px;
+    height: 394px;
+}
+}
+@media only screen and (max-width: 336px){
+.Diapo6 {
+    width: 180px;
+    height: 284px;
+}
+}
+/*-------------------------------------------------------
+
+Contact
+
+-------------------------------------------------------*/
+
+.contact-m {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.contact-m img {
+  width: 14rem;
+  height: 14rem;
+  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+.contact-m h4, .contact-m .h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.img-brand {
+  height: 2.75rem;
+}
+
+.lien:hover
+{
+  color: brown;
+}
+
+/*--------------------------------------------------------
+
+Footer
+
+---------------------------------------------------------*/
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
