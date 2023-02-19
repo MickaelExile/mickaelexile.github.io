@@ -349,7 +349,7 @@ Présentation et titre autres sections
 }
 
 .page-section {
-  padding: 3rem 0;
+  padding: 6rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 45px;
@@ -414,7 +414,7 @@ Présentation et titre autres sections
 @media only screen and (max-width: 600px)
 {
   .page-section {
-  padding: 2rem 1rem;
+  padding: 6rem 1rem;
 }
 /*Projet et Contact titre*/
 .page-section h2.section-heading, .page-section .section-heading.h2 {
@@ -948,7 +948,7 @@ Slide Expérience/Formation
 @media only screen and (max-width: 600px)
 {
   .page-exp {
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
   background-color: white;
 }
 .page-exp h4.section-exp, .page-exp .section-exp.h4 {
