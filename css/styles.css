@@ -12,7 +12,7 @@ Barre de navigation responsive
   background-color: transparent;
 }
 #mainNav .navbar-toggler {
-  padding: -0.25rem;
+  padding: 0.75rem;
   font-size: 1rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
@@ -26,8 +26,8 @@ Barre de navigation responsive
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 15px;
-  margin-right:-10%;
+  height: 40px;
+  margin-right:-15px;
 }
 #mainNav.navbar-shrink {
     /*Navbar descendant*/
@@ -68,7 +68,7 @@ Barre de navigation responsive
   padding-bottom: 7px;
 }
  #mainNav .navbar-brand {
-    font-size: 7px;
+    font-size: 15px;
   }
   #mainNav.navbar-shrink {
     /*Navbar descendant*/
