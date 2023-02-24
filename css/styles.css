@@ -60,7 +60,12 @@ Barre de navigation responsive
   letter-spacing: 0.0625em;
  }
 }
-
+@media only screen and (max-width:500px)
+{
+  #logonav{
+    display:none; /*Inverse display:block*/
+  }
+}
 @media only screen and (max-width: 390px)
 {
  #mainNav {
@@ -78,12 +83,7 @@ Barre de navigation responsive
 
   }
 }
-@media only screen and (max-width:500px)
-{
-  #logonav{
-    display:none; /*Inverse display:block*/
-  }
-}
+
 @media only screen and (max-width: 310px)
 {
   #mainNav .navbar-brand {
