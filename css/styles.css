@@ -983,9 +983,6 @@ Slide Expérience/Formation
    font-size: 22px;
 }
 }
-#SlideTimeline {
-   padding: 0rem 1rem; 
-}
 @media only screen and (max-width: 499px)
 {
 .page-exp h4.section-exp, .page-exp .section-exp.h4 {
